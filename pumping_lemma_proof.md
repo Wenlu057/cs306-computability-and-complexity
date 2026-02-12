@@ -67,15 +67,4 @@ We have reached a contradiction: the Pumping Lemma says we should be able to pum
 
 Therefore our assumption in Step 1 is false, and **$L$ is not regular**. $\blacksquare$
 
----
 
-## Bonus: What about $i = 0$?
-
-We can also show the case where $y$ is removed entirely ($i = 0$):
-
-$$xy^0z = 0^a \cdot 0^{p-a-b} \cdot 1^p = 0^{p-b} \; 1^p$$
-
-- Number of 0s: $p - b < p$
-- Number of 1s: $p$
-
-Fewer 0s than 1s — also **not in $L$**. This reinforces that the proof works for any pumping value, not just $i = 2$.
